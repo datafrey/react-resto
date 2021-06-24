@@ -1,0 +1,43 @@
+.error-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.error {
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 5px 5px 45px rgba(256, 256, 256, 0.1);
+  z-index: 999;
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 2px darkred solid;
+    border-radius: 100%;
+    span {
+      display: block;
+      color: darkred;
+      font-size: 100px;
+      text-align: center;
+    }
+  }
+  &__message {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+}

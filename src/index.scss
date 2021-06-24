@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.message {
+  &-enter {
+    opacity: 0;
+    &-active {
+      transition: opacity 250ms ease-out;
+      opacity: 1;
+    }
+  }
+  &-exit-active {
+    transition: opacity 250ms ease-out;
+    opacity: 0;
+  }
+}
